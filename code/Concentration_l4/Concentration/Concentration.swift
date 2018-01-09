@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Concentration {
+struct Concentration {
     
     private(set) var cards = [Card]()
     
@@ -28,7 +28,8 @@ class Concentration {
         }
     }
     
-    func chosenCard(at index: Int) {
+    // this mutating keyword used because now Concentration is a struct
+    mutating func chosenCard(at index: Int) {
         // protects the index out of boundaray error
         assert(cards.indices.contains(index), "Concentration.chosenCard(at: (\(index)): chosen index not in the cards")
         if !cards[index].isMatched {
