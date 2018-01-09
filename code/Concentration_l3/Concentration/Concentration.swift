@@ -33,16 +33,17 @@ class Concentration {
         // this will be called everytime we set indexOfOneAndOnlyFaceUpCard
         set {
             for index in cards.indices {
-                
+                // evaluate the index, if it is the only one faceUp card
+                // we'll make it faceUp, otherwise we make it face down
                 cards[index].isFaceUp = (index == newValue)
             }
         }
     }
     
     func chosenCard(at index: Int) {
-        // check only card is not matched
+        // protects the index out of boundaray error
+        assert(cards.indices.contains(index), "Concentration.chosenCard(at: (\(index)): chosen index not in the cards")
         if !cards[index].isMatched {
-            // the newly chosen card is not the one chosen before
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 // check if cards match
                 if cards[matchIndex].identifier == cards[index].identifier {
@@ -51,24 +52,22 @@ class Concentration {
                 }
                 // since now we're anyway choosing two cards, we will set indexOfOneAndOnlyFaceUpCard to nil
                 cards[index].isFaceUp = true
-                indexOfOneAndOnlyFaceUpCard = nil
+                // indexOfOneAndOnlyFaceUpCard = nil
+                // now we don't set it to nil manully because everytime we ask for this indexOfOneAndOnlyFaceUpCard, it will set the correct value
+
             } else {
                 // here we have either indexOfOneAndOnlyFaceUpCard is nil, either 0 or 2 cards faceup
-                // or matchIndex == index
-                // either situation we would only want make indexOfOneAndOnlyFaceUpCard index
-                for flipDownIndex in cards.indices {
-                    cards[flipDownIndex].isFaceUp = false
-                }
-                cards[index].isFaceUp = true
+                // since whenever we set it we'll
                 indexOfOneAndOnlyFaceUpCard = index
             }
         }
     }
     
     init(numberOfPairsOfCards: Int) {
+        // we can't make 0 or negative pair of cards
+        assert(numberOfPairsOfCards > 0 ,"Concentration.init(\(numberOfPairsOfCards)): you must have at least one pair of cards")
         for _ in 0..<numberOfPairsOfCards {
             let card = Card()
-            // card is a struct, so here add 2 different card with the same card identifier to the cards array
             cards += [card, card]
         }
     }

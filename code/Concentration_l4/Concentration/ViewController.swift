@@ -11,34 +11,43 @@ import UIKit
 class ViewController: UIViewController {
     
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
-    // this is the model, often it is public
-    // here we make it private because numberOfPairsOfCards is tied to UI and we don't want to make it public
-    
-    
-    // becasue it's already a get-only, so it is safe people don't overwrite it
-    // we make it default-internal so that people can know how many numberOfPairsOfCards there is
-    // computed properties
+
     var numberOfPairsOfCards: Int {
         return (cardButtons.count + 1)/2
     }
     
-    // we don't want people set it
+    // init will not call didSet, so we put the update in a seperate func
+    // and we will call it both when flipCountLabel is
     private(set) var flipCount = 0 {
         didSet{
-            flipCountLabel.text = "Flips: \(flipCount)"
+            updateFlipCountLabel()
         }
     }
     
-    // Outlets and Actions related to UI, make them private most of the time
-    @IBOutlet private weak var flipCountLabel: UILabel!
+    private func updateFlipCountLabel() {
+        let attributes : [NSAttributedStringKey : Any] = [
+            .strokeWidth : 5.0,
+            .strokeColor : #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
+        ]
+        let attributedString = NSAttributedString.init(string: "Flips \(flipCount)", attributes: attributes)
+        flipCountLabel.attributedText = attributedString
+    }
+    
+    // this connection is made by iOS, and when it is make the connection
+    // it will set the flipCountLabel, so we can use didSet here
+    // when the connections gets made, the didSet gets called
+    // this should only be called once for this entire project that is when the connections gets made
+    @IBOutlet private weak var flipCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     
 
     @IBOutlet private var cardButtons: [UIButton]!
     
-    // this needs to be changed for assignment
-    // the strategy is to just mark everything private by default and then modify it
-    private var emojiChoices = ["🦃","😱","🙀","😈","🍭","🍬", "👻","🎃" ]
-
+    // now emojiChoices is String
+    private var emojiChoices = "🦃😱🙀😈🍭🍬👻🎃"
     
     @IBAction private func touchCard(_ sender: UIButton) {
         flipCount += 1
@@ -68,18 +77,18 @@ class ViewController: UIViewController {
         }
     }
     
-    private var emoji = [Int:String]()
-    
+    private var emoji = [Card: String]()
+
     private func emoji(for card: Card) -> String {
-        // if the link, card.identifier to String hasn't been mapped, we'll set it now, this will make the card with same identifier has the same emoji on card
-        if emoji[card.identifier] == nil {
+        if emoji[card] == nil {
             if emojiChoices.count > 0 {
-                // this protects if we have no emojiChoices left, this will only happen if we have more cards pairs than emoji choices
-                emoji[card.identifier] = emojiChoices.remove(at: emojiChoices.count.arc4random)
+                // String cannot index by Int, we have to use String.Index
+                let randomStringIndex = emojiChoices.index(emojiChoices.startIndex, offsetBy: emojiChoices.count.arc4random)
+                // remove(at: ) we get Character, we use this String init
+                emoji[card] = String(emojiChoices.remove(at: randomStringIndex))
             }
         }
-        // if optional, have default value, swift syntax sugar
-        return emoji[card.identifier] ?? "?"
+        return emoji[card] ?? "?"
     }
 
 }
