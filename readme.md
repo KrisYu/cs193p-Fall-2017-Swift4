@@ -7,19 +7,21 @@
 ## Lectures
 
 
-Slides | Demo Code | Notes
-------------- | ------------- | -------------
-[Lecture 1: Introduction to iOS 11, Xcode 9 and Swift 4](slides/Lecture_1_Slides.pdf)  | [Concentration_l1](code_demo/Concentration_l1)  | [lecture1_notes](notes/lecture_1.md)
-[Lecture 2: MVC's](slides/Lecture_2_Slides.pdf)  | [Concentration_l2](code_demo/Concentration_l2)  | [lecture2_notes](notes/lecture_2.md)
+Slides | Demo Code
+------------- | -------------
+[Lecture 1: Introduction to iOS 11, Xcode 9 and Swift 4](slides/Lecture_1_Slides.pdf)  | [Concentration_l1](code_demo/Concentration_l1)  
+[Lecture 2: MVC's](slides/Lecture_2_Slides.pdf)  | [Concentration_l2](code_demo/Concentration_l2) 
 Friday Session 1: Debugging and Xcode Tips and Tricks | breakpoint & shortcuts | 
-[Lecture 3: Swift Programming Language](slides/Lecture_3_Slides.pdf)  | [Concentration_l3](code_demo/Concentration_l3)  | [lecture3_notes](notes/lecture_3.md)
-[Lecture 4: More Swift](slides/Lecture_4_Slides.pdf)  | [Concentration_l4](code_demo/Concentration_l4)  | [lecture4_notes](notes/lecture_4.md)
-[Lecture 5: Drawing](slides/Lecture_5_Slides.pdf)  | [PlayingCard_l5](code_demo/PlayingCard_l5)  | [lecture5_notes](notes/lecture_5.md)
-[Lecture 6: Multitouch](slides/Lecture_6_Slides.pdf)  | [PlayingCard_l6](code_demo/PlayingCard_l6)  | [lecture6_notes](notes/lecture_6.md)
-[Lecture 7: Multiple MVCs, Timer and Animation](slides/Lecture_7_Slides.pdf)  | [Concentration_l7](code_demo/Concentration_l7)  | [lecture7_notes](notes/lecture_7.md)
-[Lecture 8: Animation](slides/Lecture_8_Slides.pdf)  | [PlayingCard_l8](code_demo/PlayingCard_l8)  | [lecture8_notes](notes/lecture_8.md)
-Friday Session 2: Github and Source Control Workflow | Xcode built in git |
-
+[Lecture 3: Swift Programming Language](slides/Lecture_3_Slides.pdf)  | [Concentration_l3](code_demo/Concentration_l3)  
+[Lecture 4: More Swift](slides/Lecture_4_Slides.pdf)  | [Concentration_l4](code_demo/Concentration_l4)
+[Lecture 5: Drawing](slides/Lecture_5_Slides.pdf)  | [PlayingCard_l5](code_demo/PlayingCard_l5)  
+[Lecture 6: Multitouch](slides/Lecture_6_Slides.pdf)  | [PlayingCard_l6](code_demo/PlayingCard_l6) 
+[Lecture 7: Multiple MVCs, Timer and Animation](slides/Lecture_7_Slides.pdf)  | [Concentration_l7](code_demo/Concentration_l7) 
+[Lecture 8: Animation](slides/Lecture_8_Slides.pdf)  | [PlayingCard_l8](code_demo/PlayingCard_l8)  
+Friday Session 2: Github and Source Control Workflow | Xcode built in git 
+[Lecture 9: View Controller Lifecycle and Scroll View](slides/Lecture_9_Slides.pdf) | [Concentration_l9](code_demo/Concentration_l9) [Cassini_l9](code_demo/Cassini_l9) 
+[Lecture 10: Multithreading and Autolayout](slides/Lecture_10_Slides.pdf) | [Concentration_l10](code_demo/Concentration_l10) [Cassini_l10](code_demo/Cassini_l10)  
+[Lecture 11: Drag and Drop, Table View and Collection View](slides/Lecture_11_Slides.pdf) | [EmojiArt_l11](code_demo/EmojiArt_l11) 
 
 ## Reading Assignments
 
