@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 struct PlayingCard {
     
     var suit: Suit
