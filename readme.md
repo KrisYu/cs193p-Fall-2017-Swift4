@@ -23,6 +23,8 @@ Friday Session 2: Github and Source Control Workflow | Xcode built in git
 [Lecture 10: Multithreading and Autolayout](slides/Lecture_10_Slides.pdf) | [Concentration_l10](code_demo/Concentration_l10) [Cassini_l10](code_demo/Cassini_l10)  
 Friday Session 3: Instruments | Profile with Instruments
 [Lecture 11: Drag and Drop, Table View and Collection View](slides/Lecture_11_Slides.pdf) | [EmojiArt_l11](code_demo/EmojiArt_l11) 
+[Lecture 12: Drag and Drop, Table View, Collection View, and Text Field](slides/Lecture_12_Slides.pdf) | [EmojiArt_l12](code_demo/EmojiArt_l12) 
+
 
 ## Reading Assignments
 

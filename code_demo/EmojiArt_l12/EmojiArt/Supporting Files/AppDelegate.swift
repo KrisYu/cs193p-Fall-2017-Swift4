@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SetGame
+//  EmojiArt
 //
-//  Created by XueYu on 1/11/18.
+//  Created by Xue Yu on 1/1/18.
 //  Copyright © 2018 XueYu. All rights reserved.
 //
 
