@@ -25,8 +25,8 @@ Friday Session 3: Instruments | Profile with Instruments
 [Lecture 11: Drag and Drop, Table View and Collection View](slides/Lecture_11_Slides.pdf) | [EmojiArt_l11](code_demo/EmojiArt_l11) 
 [Lecture 12: Drag and Drop, Table View, Collection View, and Text Field](slides/Lecture_12_Slides.pdf) | [EmojiArt_l12](code_demo/EmojiArt_l12) 
 [Lecture 13: Persistence and Documents](slides/Lecture_13_Slides.pdf) | [EmojiArt_l13](code_demo/EmojiArt_l13) 
-[Lecture 14: Persistence and Documents Demo](slides/Lecture_14_Slides.pdf) | [EmojiArt_l14_old](code_demo/EmojiArt_l14_old) [EmojiArt_l14](code_demo/EmojiArt_l14) 
-
+[Lecture 14: Persistence and Documents Demo](slides/Lecture_14_Slides.pdf) | [EmojiArt_l14_old](code_demo/EmojiArt_l14_old)  [EmojiArt_l14](code_demo/EmojiArt_l14) 
+[Lecture 15: Alerts, Notifications, Application Lifecycle](slides/Lecture_15_Slides.pdf) | [EmojiArt_l15](code_demo/EmojiArt_l15)  [EmojiArt_l15_notification](code_demo/EmojiArt_l15_notification) 
 
 
 
