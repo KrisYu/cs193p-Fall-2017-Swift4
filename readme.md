@@ -27,8 +27,8 @@ Friday Session 3: Instruments | Profile with Instruments
 [Lecture 13: Persistence and Documents](slides/Lecture_13_Slides.pdf) | [EmojiArt_l13](code_demo/EmojiArt_l13) 
 [Lecture 14: Persistence and Documents Demo](slides/Lecture_14_Slides.pdf) | [EmojiArt_l14_old](code_demo/EmojiArt_l14_old)  [EmojiArt_l14](code_demo/EmojiArt_l14) 
 [Lecture 15: Alerts, Notifications, Application Lifecycle](slides/Lecture_15_Slides.pdf) | [EmojiArt_l15](code_demo/EmojiArt_l15)  [EmojiArt_l15_notification](code_demo/EmojiArt_l15_notification) 
-
-
+[Lecture 16: More Segues](slides/Lecture_16_Slides.pdf) | 
+[Lecture 17: Core Motion and Camera](slides/Lecture_17_Slides.pdf) | 
 
 ## Reading Assignments
 
